@@ -99,16 +99,12 @@ h1, h2, h3, h4 {
 	top: 30px;
 }
 
-.chat_panel .dialogue table tr {
-}
-
 table p {
    	position: relative;
    	border-radius: 5px;
    	display: inline-block;
    	height: 60px;
    	line-height: 60px;
-   	background-color: red;
    	padding: 0 10px;
    	margin: 5px 10px 5px 0;
 
@@ -131,15 +127,7 @@ table p:before {
 }
 
 .text_bubble1:before {
-	content:"";
-   	position: absolute;
-   	right: 100%;
-   	top: 22px;
-   	width: 0;
-   	height: 0;
-   	border-top: 8px solid transparent;
    	border-right: 16px solid #FF9F1C;
-   	border-bottom: 8px solid transparent;
 }
 
 .text_bubble2 {
@@ -147,15 +135,7 @@ table p:before {
 }
 
 .text_bubble2:before {
-	content:"";
-   	position: absolute;
-   	right: 100%;
-   	top: 22px;
-   	width: 0;
-   	height: 0;
-   	border-top: 8px solid transparent;
    	border-right: 16px solid #2EC4B6;
-   	border-bottom: 8px solid transparent;
 }
 
 .text_bubble3 {
@@ -163,15 +143,7 @@ table p:before {
 }
 
 .text_bubble3:before {
-	content:"";
-   	position: absolute;
-   	right: 100%;
-   	top: 22px;
-   	width: 0;
-   	height: 0;
-   	border-top: 8px solid transparent;
    	border-right: 16px solid #FDFFFC;
-   	border-bottom: 8px solid transparent;
 }
 
 .text_bubble4 {
@@ -179,15 +151,7 @@ table p:before {
 }
 
 .text_bubble4:before {
-	content:"";
-   	position: absolute;
-   	right: 100%;
-   	top: 22px;
-   	width: 0;
-   	height: 0;
-   	border-top: 8px solid transparent;
    	border-right: 16px solid #5CA4A9;
-   	border-bottom: 8px solid transparent;
 }
 
 .text_bubble5 {
@@ -195,15 +159,7 @@ table p:before {
 }
 
 .text_bubble5:before {
-	content:"";
-   	position: absolute;
-   	right: 100%;
-   	top: 22px;
-   	width: 0;
-   	height: 0;
-   	border-top: 8px solid transparent;
    	border-right: 16px solid #E6EBE0;
-   	border-bottom: 8px solid transparent;
 }
 .name {
 	width: 6%;
