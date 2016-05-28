@@ -2,9 +2,9 @@
 
 ## Marketable Names:
 
-1. ???
-2. ???
-3. ???
+1. Flow
+2. Panes
+3. Sheets
 4. ???
 5. ???
 
@@ -12,7 +12,7 @@
 
 ## Team Project 1: Build a Team Collaboration App
 1. Build Chat Panel - **finished**
-2. Add White Board Panel
+2. Add White Board Panel - **finished**
 3. Add jQuery slide effect to hide and show panels
 
 ## Team Project 2: Create Cheatsheet Encyclopedia Entries
