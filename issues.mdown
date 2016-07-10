@@ -1,0 +1,9 @@
+1. text bubble arrow
+2. height 800px may become problematic when viewed on screen with high resolution, potential solutions: 
+3. best ways to hid inactive panels. `display: none` or postion the panel outsite the view.
+4. hasn't fully understand when to use `id`, when to use `class`, now it seems that `class` can cover it all, but `id` may be of use in javascript implementation?
+
+hidden whiteboard section display none
+
+links and live links
+

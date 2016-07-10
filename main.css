@@ -1,208 +1,418 @@
 html, body {
-	width: 100%;
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
-}
-.container {
-	font-family: Roboto, Sans-serif;
-	font-size: 15px;
+	font-family: Roboto, sans-serif;
 }
 
 h1, h2, h3, h4 {
 	font-family: Roboto slab;
 }
 
-.page_title {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	padding-left: 2%;
-	background-color: #FD3C3C;
-	color: #ffffff;
-}
-
-.page_title span {
-	font-weight: 600;
-}
-
 .heading {
-	width: 96%;
+	margin-left: 5%;
+	height: 45px;
+	color: #a7abad;
+	font-weight: 100;
+}
+
+.heading img {
+	width: 50px;
+}
+
+.heading img, h1 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.heading h1 {
+	font-size: 1.2em;
+	padding-top: 5px;
+}
+
+.heading h1 span {
+	color: #6487ea;
+}
+
+#container {
+	position: relative;
+	background-color: #f1f6f9;
+	height: 800px;
+	margin-top: 20px;
+	padding-top: 2%;
+}
+
+.panel1 {
+	width: 60%;
 	margin: auto;
-	margin-top: 60px;
-	color: #4c4c4c;
+}
+
+.chat {
+	overflow-y: scroll;
 	font-weight: 300;
 }
 
-.heading a {
-	color: #b2b2b2;
+
+#chatTab {
+	padding-left: 30%;
+	padding-right: 30%;
 }
 
-.show_more {
-	text-align: center;
-	margin-top: 2%;
-	font-size: 0.8em;
+#whiteboardTab {
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
-.show_more a {
-	border-bottom: 1px solid #a6a6a6;
-	padding: 10px 25px 5px 25px;
-
+.show {
+	display: block;
 }
 
-.menu_bar {
-	width: 100%;
-	font-family: Roboto slab, Sans-serif;
-	background-color: #fbfbfb;
-	margin-bottom: -14px;
+.hide {
+	display: none;
 }
 
-.menu_bar ul {
-	height: 65px;
-	border-top: 1px solid #d8d8d8;
-
+.panel_menu {
 }
 
-.menu_bar ul li {
+
+.panel_menu ul {
+		padding: 0;
+		margin-bottom: 0;
+}
+
+.panel_menu ul li {
+	font-size: 1.3em;
 	display: inline-block;
-	margin-left: 1.5%;
-	padding-right: 1.5%;
-	border-right: 1px solid #d8d8d8;
-	height: 65px;
-	line-height: 65px;
-	font-size: 1.1em;
+	width: 200px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
 }
 
-.menu_bar ul li a {
+.panel_menu ul li span {
+	font-size: 0.7em;
+	float: right;
+	margin-right: 5%;
+}
+
+.panel_menu ul li a {
+	color: #5572BA;
 	text-decoration: none;
-	color: #d8d8d8;
+}
+
+.add_panel {
+	position: relative;
+}
+
+.shrink {
+	width: 45%;
+	margin-left: 5%;
+}
+
+
+#panelSelection {
+	display: none;
+	width:100px;
+
+}
+
+#panelSelection a {
+	display: block;
+}
+
+#panelSelection a:hover {
+	background-color: #f1f6f9;
+}
+
+
+.add_panel:hover #panelSelection {
+	display: block;
+	position: absolute;
+	left: 25%;
 }
 
 .active_panel {
-	color: #F45B69;
+	border-top: 5px solid #6487ea;
+	background-color: white;
 }
 
-.chat_panel {
-	background-color: #FF6262;
-	width: 100%;
-	height: 700px;
+.idle_panel {
+	background-color: #d9dfe5;
+	color: #a7abad;
+	border-top: 5px solid #d9dfe5;
+}
+
+.idle_panel:hover {
+	opacity: 0.7;
+}
+
+.idle_panel a {
+	color: #a7abad;
+	font-weight: 300;
+}
+
+.add_panel  {
+	float: right;
+}
+
+.add_panel a {
+	font-size: 0.7em;
+}
+
+.conversation {
+	background-color: white;
+	overflow-y: scroll;
+	height: 450px;
+	border-bottom: 1px solid #ced6db;
+	font-weight: 300;
 
 }
 
-.chat_panel .dialogue table {
-	width: 95%;
-	margin: auto;
-	padding-left: 2%;
-	border-left: 3px solid #FD3C3C;
+.other .profile_picture {
+	width: 48px;
+	float: left;
+}
+
+.other {
+	margin-left: 2%;
+	padding-top: 20px;
+}
+
+.me {
+	margin-right: 2%;
+	padding-top: 20px;
+}
+
+.me .name {
+	color: black;
+}
+
+.me .profile_picture {
+	width: 48px;
+	vertical-align: top;
+	float: right;
+
+}
+
+.bubble {
+	width: 65%;
+	border-radius: 5px;
+   	padding: 1%;
+
+}
+
+.bubble tr:nth-child(2) {
+	line-height: 180%;
+
+}
+.me .bubble {
 	position: relative;
-	top: 30px;
-}
-
-table p {
-   	position: relative;
-   	border-radius: 5px;
    	display: inline-block;
-   	height: 60px;
-   	line-height: 60px;
-   	padding: 0 10px;
-   	margin: 5px 10px 5px 0;
+   	left: 23%;
+   	border: 1px solid #ced6db;
+   }
 
-}
-
-table p:before {
+.me .bubble:before {
 	content:"";
    	position: absolute;
-   	right: 100%;
-   	top: 22px;
+   	left: 100%;
+   	top: 18px;
    	width: 0;
    	height: 0;
    	border-top: 8px solid transparent;
-   	border-right: 16px solid red;
-   	border-bottom: 8px solid transparent;
+   	border-left: 8px solid #e9eefb;
+   	border-bottom: 8px solid transparent;	
 }
 
-.text_bubble1 {
-	background-color: #FF9F1C;
+.other .bubble {
+	margin-left: 65px;
+	position: relative;
+   	background-color: #e9eefb;
 }
 
-.text_bubble1:before {
-   	border-right: 16px solid #FF9F1C;
+.other .bubble:before {
+	content:"";
+   	position: absolute;
+   	right: 100%;
+   	top: 18px;
+   	width: 0;
+   	height: 0;
+   	border-top: 8px solid transparent;
+   	border-right: 8px solid #e9eefb;
+   	border-bottom: 8px solid transparent;	
 }
 
-.text_bubble2 {
-	background-color: #2EC4B6;
+#vivian .bubble {
+	background-color: #f8effb;
 }
 
-.text_bubble2:before {
-   	border-right: 16px solid #2EC4B6;
+#vivian .name {
+	color: #ba7fcb;
 }
 
-.text_bubble3 {
-	background-color: #FDFFFC;
+#vivian .bubble:before {
+	content:"";
+   	position: absolute;
+   	right: 100%;
+   	top: 18px;
+   	width: 0;
+   	height: 0;
+   	border-top: 8px solid transparent;
+   	border-right: 8px solid #f8effb;
+   	border-bottom: 8px solid transparent;	
 }
 
-.text_bubble3:before {
-   	border-right: 16px solid #FDFFFC;
-}
-
-.text_bubble4 {
-	background-color: #5CA4A9;
-}
-
-.text_bubble4:before {
-   	border-right: 16px solid #5CA4A9;
-}
-
-.text_bubble5 {
-	background-color: #E6EBE0;
-}
-
-.text_bubble5:before {
-   	border-right: 16px solid #E6EBE0;
-}
 .name {
-	width: 6%;
-	font-size: 1.2em;
-	color: white;
+	color: #6487ea;
+	font-weight: 500;
 }
 
-.chat_panel .dialogue .time_sent {
-	width: 15%;
-	text-align: right;
-	color: #d8d8d8
+.me .name {
+	float: right;
 }
 
-.say_something form {
-	margin-top: 60px;
-	margin-left: 5%;
-	width: 45%;
-	height: 50px;
-	line-height: 50px;
-	background-color: #FF8A8A;
-	text-align: center;
-	box-shadow: 1px 1px 2px #FD3C3C;
+
+.time_sent {
+	width: 10%;
+	white-space: nowrap;
+	font-size: 0.8em;
+	color: #cccccc;
 }
 
-.say_something input {
-	border: none;
-	border-bottom: 3px solid #d8d8d8;
+.say_something {
+	margin-top: 30px;
+	background-color: white;
+	margin-top: 0;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.say_something .profile_picture {
+	width: 48px;
+	vertical-align: top;
+	margin-left: 2%;
+}
+
+.say_something .inputBubble {
+	height: 70px;
 	width: 60%;
-	padding-bottom: 5px;
-	background-color: #FF8A8A;
-	color: #d8d8d8;
-	font-size: 1em;
+	margin-left: 20px;
+	position: relative;
+   	border-radius: 5px;
+   	background-color: #f2f2f2;
+   	padding: 1%;
+   	border: none;
+   	display: inline-block;
+   	border: 1px solid #ced6db;
+   	color: #cccccc;
+   	outline: none;
+}
+
+.say_something .bubble:before {
+	content:"";
+   	position: absolute;
+   	right: 100%;
+   	top: 18px;
+   	width: 0;
+   	height: 0;
+   	border-top: 8px solid transparent;
+   	border-right: 8px solid #f2f2f2;
+   	border-bottom: 8px solid transparent;	
 }
 
 .say_something button {
+	vertical-align: bottom;
+	width: 20%;
+	height: 40px;
+	background-color: #6487ea;
+	border-radius: 2px;
+	font-size: 0.8em;
+	color: White;
 	border: none;
-	font-size: 1em;
-	font-family: roboto-slab;
-	background-color: #FF8A8A;
-	color: white;
-	height: 28px;
-	border-left: 1px solid #FD3C3C;
-	margin-left: 24%;
-	padding-left: 3%;
+	margin-left: 2%;
 }
 
+.whiteboard {
+	display: none;
+}
+
+
+.whiteboard .panel_menu .add_panel a {
+	color: #ff4ca6;
+}
+
+.whiteboard .active_panel {
+	border-top: 5px solid #ff4ca6;
+}
+
+.whiteboard .active_panel a {
+	color: #ff4ca6;
+}
+
+.panel_menu ul li span {
+	font-size: 0.7em;
+	float: right;
+	margin-right: 5%;
+	font-weight: 900;
+	color: #999999;
+	cursor: pointer;
+}
+
+.panel_menu ul li span:hover {
+	opacity: 0.7;
+}
+
+#drawing_board {
+	background-color: white;
+	height: 480px;
+	overflow-y: scroll;
+
+}
+
+#drawing_board div {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0 5% 5% 5%;
+}
+
+#drawing_board div:first-child {
+	width: 50%;
+	height: 30%;
+	position: relative;
+	top: 5%;
+}
+
+#drawing_board div:nth-child(2) {
+	width: 70%;
+	height: 30%;
+}
+
+#tool_bar {
+	background-color: white;
+	border-top: 2px solid #f2f2f2;
+	font-family: Roboto slab;
+	font-size: 0.8em;
+	text-align: center;
+
+}
+
+#tool_bar div {
+	display: inline-block;
+	margin-right: 5%;
+	text-align: center;
+	color: #999999;
+}
+
+#tool_bar div img {
+
+	margin-top: 2%;
+	text-align: center;
+}
+
+#tool_bar div p {
+	margin-top: 1%;
+}
+
+#current {
+	color: #6487ea;
+}

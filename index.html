@@ -1,72 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Chat App</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+	<title>Team Collaboration App</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src='team-collaboration.js'></script>
+
 </head>
 <body>
-	<div class="container">
-		<div class="page_title">
-			<p>Team <span>Finder</span></p>
-		</div>
-		<div class="heading">
-			<h2>Team Name</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. (<a>Edit</a>)</p>
-			<div class="show_more"><a>Show More...</a></div>
-		</div>
-		<div class="menu_bar">
-			<ul>
-				<li class="active_panel">Chat</li>
-				<li class="active_panel">Whiteboard</li>
-				<li>Charts</li>
-				<li>Diagrams</li>
-				<li>Code Editor</li>
-				<li>Calendar</li>
-				<li class="more"><a href="">+ More</a></li>
-			</ul>
+<section class="heading">
+	<img src="./images/logo.png">
+	<h1><span>Collaboration</span>.Modern Developer</h1>
+</section>
+<div id="container">
+<div class="panel1">
+<section class="panel_menu">
+		<ul>
+			<li class="active_panel"><a id="chatTab" href="">Chat</a><span class="closeSymbol">&#10005</span></li>
+			<li class="idle_panel"><a id="whiteboardTab" href="">Whiteboard</a><span class="closeSymbol">&#10005</span></li>
+			<li class="add_panel">
+				<a href="">+ add panel</a>
+				<div id="panelSelection">
+					<a href="">Whiteboard</a>
+					<a href="">Chat</a>	
+				</div>
+			</li>
+		</ul>
+		</section>
+	<section class="chat">
+		<section class="conversation">
+			<div class="other" id="vivian">
+				<img class="profile_picture" src="https://githubchatom/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
+					<table class="bubble">
+						<tr>
+							<td class="name">Vivian Liu</td>
+							<td class="time_sent">16 minutes ago</td>
+						</tr>
+						<tr>
+							<td class="chat_content" colspan="2">Hey everyone :)</td>
+						</tr>
+					</table>
 			</div>
-		<div class=chat_panel>
-		<div class="dialogue">
-		<table>
-			<tr>
-				<td class="name">Jorge</td>
-				<td><p class="text_bubble1">Two roads diverged in a yellow wood</p></td>
-				<td class="time_sent">00:00</td>
-			</tr>
-			<tr>
-				<td class="name">Vito</td>
-				<td><p class="text_bubble2">And sorry I could not travel both And be one traveler, long I stood</p></td>
-				<td class="time_sent">00:00</td>
-			</tr>
-			<tr>
-				<td class="name">Vito</td>
-				<td><p class="text_bubble3">And looked down one as far as I could To where it bent in the undergrowth;</p></td>
-				<td class="time_sent">00:00</td>
-			</tr>
-			<tr>
-				<td class="name">Jorge</td>
-				<td><p class="text_bubble4">Then took the other, as just as fair</p></td>
-				<td class="time_sent">00:00</td>
-			</tr>
-			<tr>
-				<td class="name">Vito</td>
-				<td><p class="text_bubble5">And having perhaps the better claim</p></td>
-				<td class="time_sent">00:00</td>
-			</tr>
-		</table>
-		</div>
-		<div class="say_something">
-			<form>
-			<input type="text" value="Say Something">
-			<button type="submit">Send</button>
-			</form>
-		</div>
-		</div>
-	</div>
+			<div class="other" id="Vito">
+				<img class="profile_picture" src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
+					<table class="bubble">
+						<tr>
+							<td class="name">Vito Fan</td>
+							<td class="time_sent">16 minutes ago</td>
+						</tr>
+						<tr>
+							<td class="chat_content" colspan="2">Two roads diverged </td>
+						</tr>
+					</table>
+			</div>
+			<div class="me">
+					<table class="bubble">
+						<tr>
+							<td class="time_sent">16 minutes ago</td>
+							<td class="name">Jorge Hernandez</td>
+						</tr>
+						<tr>
+							<td class="chat_content" colspan="2">Two roads diverged in a yellow wood, And sorry I could not travellong I stood And looked down one as far as I could :)</td>
+						</tr>
+					</table>
+					<img class="profile_picture" src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
+
+			</div>
+			<div class="other" id="Jorge">
+				<img class="profile_picture" src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
+					<table class="bubble">
+						<tr>
+							<td class="name">Vito</td>
+							<td class="time_sent">16 minutes ago</td>
+						</tr>
+						<tr>
+							<td class="chat_content" colspan="2">Two roads diverged in a yellow wood, And sorry I could not trave</td>
+						</tr>
+					</table>
+			</div>
+			<div class="me">
+					<table class="bubble">
+						<tr>
+							<td class="time_sent">16 minutes ago</td>
+							<td class="name">Vito</td>
+						</tr>
+						<tr>
+							<td class="chat_content" colspan="2">Two roads diverged in a yellow wood, And sorry I could not travel both And </td>
+						</tr>
+					</table>
+					<img class="profile_picture" src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
+
+			</div>
+			<div class="other" id="Vito">
+				<img class="profile_picture" src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
+					<table class="bubble">
+						<tr>
+							<td class="name">Vito</td>
+							<td class="time_sent">16 minutes ago</td>
+						</tr>
+						<tr>
+							<td class="chat_content" colspan="2">Two roads diverged in a yellow wood, And sorry I could not travel both And be one traveler, long I stood And looked down one as far as I could To where it bent in the undergrowth; </td>
+						</tr>
+					</table>
+			</div>
+		</section>
+		<section class="say_something">
+			<img class="profile_picture" src="https://github.com/vitoahmeny/multi-page-site/blob/master/image/6dfcbafc-1aa1-42e8-b977-72164bb926f6.jpg?raw=true">
+			<textarea class="inputBubble" placeholder="Say something..."></textarea>
+			<button type='submit'>SEND</button>
+		</section>
+	</section>
+	<section class="whiteboard">
+		<section id="drawing_board">
+			<div></div>
+			<div></div>
+		</section>
+		<section id="tool_bar">
+			<div>
+				<img src="images/brush.png">
+				<p>Brush</p>
+			</div>
+			<div>
+				<img src="images/eyedropper.png">
+				<p id="current">Eyedropper</p>	
+			</div>
+			<div>
+				<img src="images/fill-color.png">
+				<p>Fill Color</p>
+			</div>
+			<div>
+				<img src="images/add-image.png">
+				<p>Add Image</p>
+			</div>
+			<div>
+				<img src="images/full-screen.png">
+				<p>Full Screen</p>
+			</div>
+		</section>
+	</section>
+</div>
+</div>
 </body>
 </html>
